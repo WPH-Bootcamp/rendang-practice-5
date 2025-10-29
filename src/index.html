@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind class 1</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- typography -->
+    <h1 class="text-red-500 font-sans text-4xl">hello world</h1>
+    <h1 class="text-red-500 font-serif font-bold text-center">
+      hello world in serif
+    </h1>
+    <h1 class="text-blue-500 font-mono font-light uppercase text-shadow-lg">
+      hello world in mono
+    </h1>
+    <!-- layout -->
+    <div class="contianer flex justify-center">
+      <p class="bg-blue-500 text-white relative top-5 p-4 timpa">item 1</p>
+      <p class="bg-red-500 text-white p-4">item 2</p>
+    </div>
+    <!-- responsive -->
+    <!-- 
+    breakpoint
+        sm: 640px screen
+        md: 768 px
+        lg: 1024 px
+        xl: 1280px
+     -->
+    <p class="text-sm text-red-500 md:hidden md:text-blue-500 md:text-lg">
+      paragraf responsive
+    </p>
+
+    <div class="flex flex-col md:flex-row">
+      <p class="pr-4 md:pr-0">item1</p>
+      <p>item2</p>
+      <p>item3</p>
+      <p>item4</p>
+    </div>
+
+    <!-- plugin forms -->
+    <form>
+      <label for="username" class="form-input-label">Username</label>
+      <input id="username" name="username" type="text" class="form-input" />
+
+      <label for="email" class="form-input-label mt-4">Email</label>
+      <input id="email" name="email" type="email" class="form-input" />
+
+      <button type="submit" class="form-button">Submit</button>
+    </form>
+    <p class="font-poppins text-brand-blue">test font</p>
+  </body>
+</html>
